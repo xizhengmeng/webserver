@@ -24,16 +24,9 @@ urlpatterns = [
                url(r'^$', learn_views.home,name='home'),  # new
                url(r'^admin/', admin.site.urls),
                url(r'callPython', learn_views.compute),  # new
-               url(r'ajaxpack', learn_views.ajaxpack),
-               url(r'ajaxgetbranchesI', learn_views.ajaxgetbranchesfuncI),
-               url(r'ajaxgetbranchesA', learn_views.ajaxgetbranchesfuncA),
                url(r'add', learn_views.compute),  # new
                url(r'uicreate', learn_views.uicreate),
                url(r'ajaxcreateui', learn_views.createui),
-               url(r'package', learn_views.package),
-               url(r'uploadFile',learn_views.upload_file),
-               url(r'uploadUrlFiles',learn_views.upload_urls_file),
-               url(r'buildlist', learn_views.buildlist),
                url(r'ajaxsendMail', learn_views.sendMails),
                url(r'jsonFormatClick1', learn_views.jsonFormat1),
                url(r'jsonFormatClick2', learn_views.jsonFormat2),
