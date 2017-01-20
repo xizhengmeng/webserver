@@ -27,7 +27,6 @@ urlpatterns = [
                url(r'add', learn_views.compute),  # new
                url(r'uicreate', learn_views.uicreate),
                url(r'ajaxcreateui', learn_views.createui),
-               url(r'ajaxsendMail', learn_views.sendMails),
                url(r'jsonFormatClick1', learn_views.jsonFormat1),
                url(r'jsonFormatClick2', learn_views.jsonFormat2),
                url(r'interfaceTestClick', learn_views.interfaceTest),

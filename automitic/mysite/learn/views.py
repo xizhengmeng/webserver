@@ -5,7 +5,6 @@ from django.shortcuts import render
 from DIY.compute import getModelFromJson
 from DIY.createui import getCreatedStringWithProperties
 from django.http import HttpResponseRedirect
-from DIY.mail import sendMail
 from DIY.APIServer import getfilecontent,writecontent,checkfile,createfolder
 import shutil
 import logging
