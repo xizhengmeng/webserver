@@ -46,6 +46,9 @@ def createui(request):
 def package(request):
     return render(request,'package.html')
 
+def checkIndexhtml(request):
+    return render(request,'checkIndex.html')
+
 def jsonFormat1(request):
     return HttpResponseRedirect('http://www.jsonparseronline.com')
 

@@ -30,6 +30,7 @@ urlpatterns = [
                url(r'jsonFormatClick1', learn_views.jsonFormat1),
                url(r'jsonFormatClick2', learn_views.jsonFormat2),
                url(r'interfaceTestClick', learn_views.interfaceTest),
+               url(r'checkIndex', learn_views.checkIndexhtml),
                url(r'blockClick', learn_views.blockClickview),
                url(r'webserver', learn_views.webserver),
                url(r'fullnewweb', learn_views.webserverfullre),
