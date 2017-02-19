@@ -6,10 +6,12 @@ from DIY.compute import getModelFromJson
 from DIY.createui import getCreatedStringWithProperties
 from django.http import HttpResponseRedirect
 from DIY.APIServer import getfilecontent,writecontent,checkfile,createfolder
+from DIY.getindex import getindex
 import shutil
 import logging
 import commands,time
 from django.views.decorators.csrf import csrf_exempt
+import chardet
 @csrf_exempt
 
 #def some_view(request):
@@ -325,3 +327,14 @@ def createforder(request):
     foldername = request.GET.get('foldername')
     text = createfolder(foldername)
     return HttpResponse(text)
+
+
+def getindexall(request):
+    listAll = getindex()
+    listNew = []
+    for item in listAll:
+        listNew.append(str(item))
+    liststring = ''.join(listNew)
+    liststring = liststring.encode('utf-8')
+    return HttpResponse(liststring)
+  

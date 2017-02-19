@@ -45,6 +45,7 @@ urlpatterns = [
                url(r'writecontent', learn_views.writestring),
                url(r'getforderlist', learn_views.checkfilelist),
                url(r'createforder', learn_views.createforder),
+               url(r'getindexallurl', learn_views.getindexall),
                ]
 
 # ... the rest of your URLconf goes here ...

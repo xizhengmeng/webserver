@@ -10,7 +10,7 @@
 <div id="header">查询指数估值</div>
 
 <div id="content">
-     <input type="inputtext" id="foldername">
+    <textarea id="textarea1" placeholder="请填入属性列表"></textarea>
     <input type="button" value="查询" id="check">
 </div>
 
@@ -37,9 +37,10 @@
 
     $(document).ready(function(){
       $("#btn").click(function(){
-        string = $("#textarea1").val()
-        $.get("/ajaxcreateui/", {'text': string},function(ret){
-            $('#textarea2').html(ret)
+        // string = $("#textarea1").val()
+        alert('ceshi')
+        $.get("/getindexallurl/",function(ret){
+            $('#textarea1').html(ret)
         })
       });
     });
