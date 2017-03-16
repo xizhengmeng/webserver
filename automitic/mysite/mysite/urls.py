@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from learn import views as learn_views  # new
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
+import settings
 
 urlpatterns = [
                url(r'next', learn_views.nextPage),  # new

@@ -29,7 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['120.27.102.15','127.0.0.1', 'localhost', 'dev.mysite.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -123,6 +122,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/Users/wxg/Documents/Build'
+STATICFILES_DIRS = (
+          os.path.join(os.path.dirname(__file__), '../static/').replace('\\','/'),
+    )
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True

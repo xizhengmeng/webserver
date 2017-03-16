@@ -330,11 +330,12 @@ def createforder(request):
 
 
 def getindexall(request):
-    listAll = getindex()
-    listNew = []
-    for item in listAll:
-        listNew.append(str(item))
-    liststring = ''.join(listNew)
-    liststring = liststring.encode('utf-8')
-    return HttpResponse(liststring)
+    content = request.POST.get('name')
+    listAll = getindex(content)
+    # listNew = []
+    # for item in listAll:
+    #     listNew.append(str(item))
+    # liststring = ''.join(listNew)
+    # liststring = liststring.encode('utf-8')
+    return HttpResponse(listAll)
   
